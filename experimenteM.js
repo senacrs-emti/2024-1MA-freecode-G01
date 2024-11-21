@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let video = document.getElementById("vid");
     let mediaDevices = navigator.mediaDevices;
     vid.muted = true;
-    but.addEventListener("click", () => {
+    
 
 // Accessing the user camera and video.
 mediaDevices
@@ -14,15 +14,16 @@ mediaDevices
         audio: true,
 })
 .then((stream) => {
-              // Changing the source of video to current stream.
-              video.srcObject = stream;
-              video.addEventListener("loadedmetadata", () => {
-                  video.play();
-              });
-          })
-          .catch(alert);
-  });
-});
+
+// Changing the source of video to current stream.
+    video.srcObject = stream;
+    video.addEventListener("loadedmetadata", () => {
+        video.play();
+        });
+    })
+    .catch(alert);
+    });
+;
 
 // valor constante do pixel para centimetro
 const pixelCM = 0.0264583333;
