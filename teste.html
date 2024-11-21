@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escolha</title>
+    <title>Document</title>
     <link rel="stylesheet" href="teste.css">
+
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> 
 </head>
 <body>
-    <input type="text" name="medida" id="medida"> <input type="button"  value="Calcula" id="calcula">
-    <img src="roupa fem 9.png" id="roupa" width="248px" height="250px">
-    <p id="tamanhos"> Seu tamanho é </p>
-
-    <script src="teste.js"></script>
+    <body style="margin: 0px; overflow: hidden">
+        <a-scene vr-mode-ui="enabled: false;" embedded arjs="debugUIEnabled: false;">
+         
+              <a-assets>
+        <img id="foto" src="roupam3.png">
+        </a-assets>
+        <a-marker present="hiro">
+         
+        <a-image width="4.5"
+        height="4.5"
+        rotation="90 0 0"
+        position="0 0 0"
+        src="#foto"></a-image>
+         
+         
+              </a-marker>
+         
+        <a-entity camera></a-entity>
+        </a-scene>
+        
+<script src="teste.js"></script>
 </body>
 </html>
