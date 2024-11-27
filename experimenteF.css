@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    }
+  
+  body{
+    overflow: hidden;
+  }
+  header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid black;
+  }
+  main{
+    width: 100%;
+    height: 501px;
+    background-color: rgb(255, 255, 255);
+  }
+  footer{
+    width: 100%;
+    height: 40px;
+    background-color: #233219;
+    border-top: 1px solid black;
+  }
+  .logo{
+    width: 50px;
+    height: 40px;
+    position: relative;
+    left: 612px;
+    top: 1px;
+  }
+  .manequimM{
+    position: relative;
+    left: 1051px;
+    top: -1393px;
+    height: 527px;
+  }
+  
+  div {
+    width: 565px;
+    height: 497px;
+    border: 2px solid #233219;
+    position: relative;
+  }
+  
+  video {
+    width: 565px;
+    height: 497px;
+    object-fit: cover;
+  }
+  
+  #but{
+      background-color: #d9ddcb;
+      padding: 1rem 2rem;
+      border-radius: 20px;
+      border: 1px solid white;
+      cursor: pointer;
+      letter-spacing: .2rem;
+      position: relative;
+      left: 549px;
+      top: -375px;
+      transition: all 0.5s ease;
+  }
+  #but:hover{
+      background-color: #393f26;
+      color: white;
+      transform: scale(1.05);
+  }
+  
+  .input{
+    position: relative;
+    top: -546px;
+    left: 552px;
+  }
+  .form {
+    --width-of-input: 200px;
+    --border-height: 1px;
+    --border-before-color: rgba(0, 0, 0, 0.39);
+    --border-after-color: #000000;
+    --input-hovered-color: #ffffff1f;
+    position: relative;
+    width: var(--width-of-input);
+  }
+   /* styling of Input */
+  .input {
+    color: #000000;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+    position: relative;
+    top: -476px;
+    left: 600px;
+  }
+   /* styling of animated border */
+  .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+  }
+   /* Hover on Input */
+  input:hover {
+    background: var(--input-hovered-color);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+   /* here is code of animated border */
+  input:focus ~ .input-border {
+    width: 100%;
+  }
+  
+  #calcula{
+    position: relative;
+    top: -516px;
+    left: 810px;
+    height: 40px;
+    width: 136px;
+  }
+  
+  p{
+    position: relative;
+    top: -670px;
+    left: 537px;
+  }
+  
+  .teste{
+    position: relative;
+    top: -387px;
+      left: -286px;
+  }
+  
+  h1{
+    position: relative;
+    left: 590px;
+    top: -958px;
+    font-size: smaller;
+  }
+  
+  ol{
+    position: relative;
+      color: black;
+      top: -954px;
+      left: 591px;
+      font-size: small;
+  }
+  
+  .entrar{
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #505837;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .entrar:hover{
+    background-color: #3c4228;
+    box-shadow: 0px 15px 20px #95a85c;
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  .entrar:active{
+    transform: translateY(-1px);
+  }
+  
+  #tamanhos{
+    position: relative;
+    top: -1171px;
+    left: 601px;
+  }

@@ -1,4 +1,4 @@
-let mediaDevices = navigator.mediaDevices;
+/* let mediaDevices = navigator.mediaDevices;
 
 document.addEventListener("DOMContentLoaded", () => {
     let but = document.getElementById("but");
@@ -24,6 +24,7 @@ mediaDevices
     .catch(alert);
     });
 ;
+*/
 
 // valor constante do pixel para centimetro
 const pixelCM = 0.0264583333;
@@ -60,3 +61,32 @@ btCalculaMedida.addEventListener('click', () => {
     
 });
 
+
+/* 
+Make the "Click me!" button move when the visitor clicks it:
+- First add the button to the page by following the steps in the TODO 🚧
+*/
+const btn = document.querySelector("button"); // Get the button from the page
+if (btn) { // Detect clicks on the button
+  btn.onclick = function () {
+    // The 'dipped' class in style.css changes the appearance on click
+    btn.classList.toggle("dipped");
+  };
+}
+ 
+ 
+// Open file when the link in the preview is clicked
+let goto = (file, line) => {
+  window.parent.postMessage(
+    { type: "glitch/go-to-line", payload: { filePath: file, line: line } }, "*"
+  );
+};
+// Get the file opening button from its class name
+const filer = document.querySelectorAll(".fileopener");
+filer.forEach((f) => {
+  f.onclick = () => { goto(f.dataset.file, f.dataset.line); };
+});
+
+
+document.querySelector('body').setAttribute('style', '');
+document.getElementById('arjs-video').setAttribute('style', 'width: 100vw;height: 100vh;object-fit: cover;position: absolute;top: 0;left: 0;');

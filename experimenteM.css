@@ -123,7 +123,7 @@ input:focus ~ .input-border {
 #calcula{
   position: relative;
   top: -516px;
-  left: 763px;
+  left: 810px;
   height: 40px;
   width: 136px;
 }
@@ -142,16 +142,16 @@ p{
 
 h1{
   position: relative;
-  left: 539px;
-  top: -1003px;
+  left: 590px;
+  top: -958px;
   font-size: smaller;
 }
 
 ol{
   position: relative;
     color: black;
-    top: -999px;
-    left: 545px;
+    top: -954px;
+    left: 591px;
     font-size: small;
 }
 
@@ -162,7 +162,7 @@ ol{
   letter-spacing: 2.5px;
   font-weight: 500;
   color: #000;
-  background-color: #fff;
+  background-color: #505837;
   border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -184,5 +184,24 @@ ol{
 #tamanhos{
   position: relative;
   top: -1171px;
-  left: 560px;
+  left: 601px;
+}
+a-scene, video{
+  height: 500px!important;
+  width: 565px!important;
+  position: relative!important;
+  z-index: 99999!important;
+  top: -357px!important;
+  left:2px!important;
+}
+
+#vid{
+  position: relative;
+}
+
+body{
+  width: 100%!important;
+  height: 430px!important;
+  margin-left: 0!important;
+  margin-top: 0!important;
 }
