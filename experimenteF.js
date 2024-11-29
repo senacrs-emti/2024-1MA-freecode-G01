@@ -73,8 +73,8 @@ if (btn) { // Detect clicks on the button
     btn.classList.toggle("dipped");
   };
 }
- 
- 
+
+
 // Open file when the link in the preview is clicked
 let goto = (file, line) => {
   window.parent.postMessage(
@@ -88,5 +88,43 @@ filer.forEach((f) => {
 });
 
 
-document.querySelector('body').setAttribute('style', '');
-document.getElementById('arjs-video').setAttribute('style', 'width: 100vw;height: 100vh;object-fit: cover;position: absolute;top: 0;left: 0;');
+//document.querySelector('body').setAttribute('style', '');
+//document.getElementById('arjs-video').setAttribute('style', 'width: 100vw;height: 100vh;object-fit: cover;position: absolute;top: 0;left: 0;');
+
+// pega a url
+const searchParams = new URLSearchParams(window.location.search);
+roupa = searchParams.get('roupa');
+let img = '';
+switch (roupa) {
+    case '1':
+      img = "roupaf1.png";
+    break;
+    case '2':
+      img = "roupaf2.png";
+    break;
+    case '3':
+      img = "roupaf3.png";
+    break;
+    case '4':
+      img = "roupaf4.png";
+    break;
+    case '5':
+      img = "roupaf5.png";
+    break;
+    case '6':
+      img = "roupaf6.png";
+    break;
+    case '7':
+      img = "roupaf7.png";
+    break;
+    case '8':
+      img = "roupaf8.png";
+    break;
+    case '9':
+      img = "roupaf9.png";
+    break;
+    case '10':
+      img = "roupaf10.png";
+    break;
+}
+document.getElementById("foto").src = img;
