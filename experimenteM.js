@@ -88,5 +88,43 @@ filer.forEach((f) => {
 });
 
 
-document.querySelector('body').setAttribute('style', '');
-document.getElementById('arjs-video').setAttribute('style', 'width: 100vw;height: 100vh;object-fit: cover;position: absolute;top: 0;left: 0;');
+//document.querySelector('body').setAttribute('style', '');
+//document.getElementById('arjs-video').setAttribute('style', 'width: 100vw;height: 100vh;object-fit: cover;position: absolute;top: 0;left: 0;');
+
+// pega a url
+const searchParams = new URLSearchParams(window.location.search);
+roupa = searchParams.get('roupa');
+let img = '';
+switch (roupa) {
+    case '1':
+      img = "roupam1.png";
+    break;
+    case '2':
+      img = "roupam2.png";
+    break;
+    case '3':
+      img = "roupam3.png";
+    break;
+    case '4':
+      img = "roupam4.png";
+    break;
+    case '5':
+      img = "roupam5.png";
+    break;
+    case '6':
+      img = "roupam6.png";
+    break;
+    case '7':
+      img = "roupam7.png";
+    break;
+    case '8':
+      img = "roupam8.png";
+    break;
+    case '9':
+      img = "roupam9.png";
+    break;
+    case '10':
+      img = "roupam10.png";
+    break;
+}
+document.getElementById("foto").src = img;

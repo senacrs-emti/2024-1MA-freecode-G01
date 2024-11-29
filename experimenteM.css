@@ -186,13 +186,22 @@ ol{
   top: -1171px;
   left: 601px;
 }
-a-scene, video{
+video{
+  height: 500px!important;
+  width: 565px!important;
+  position: relative!important;
+  z-index: 99!important;
+  top: -357px!important;
+  left:2px!important;
+}
+
+a-scene{
   height: 500px!important;
   width: 565px!important;
   position: relative!important;
   z-index: 99999!important;
-  top: -357px!important;
-  left:2px!important;
+  top: 0px!important;
+  left:0px!important;
 }
 
 #vid{
