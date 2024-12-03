@@ -4,35 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experimente sua roupa</title>
-
+    
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> 
 
     <link rel="stylesheet" href="experimenteF.css">
     <link rel="shortcut icon" href="favicon (8).ico" type="image/x-icon">
 </head>
-<body>
+<body>  
     <header>
         <img class="logo" src="logo black.png" alt="" srcset="">
     </header>
     <main>
-        <div>
-            <video id="vid">
-                <a-scene vr-mode-ui="enabled: false;" embedded arjs="debugUIEnabled: false;">
-                    <a-assets>
-                <img id="foto" src="roupaf8.png">
-                </a-assets>
-                <a-marker present="hiro">
-                <a-image width="4.5"
-                height="4.5"
-                rotation="90 0 0"
-                position="0 0 0"
-                src="#foto"></a-image>
-                    </a-marker>
-                <a-entity camera></a-entity>
-                </a-scene>
-                
-            </video>
+        <div id="video">
+
+            <a-scene vr-mode-ui="enabled: false;" embedded arjs="debugUIEnabled: false;">
+                <a-assets>
+            <img id="foto" src="roupaf8.png">
+            </a-assets>
+            <a-marker present="hiro">
+            <a-image width="4.5"
+            height="4.5"
+            rotation="90 0 0"
+            position="0 0 0"
+            src="#foto"></a-image>
+                </a-marker>
+            <a-entity camera></a-entity>
+            </a-scene>
+            
         </div>
         <br />
 
@@ -41,6 +40,7 @@
             <input class="entrar" type="button"  value="Entrar" id="calcula">
             <span class="input-border"></span>
         </div>
+
         
     <img class="teste" src="roupa fem 9.png" id="roupa" width="248px" height="250px">
     <p id="tamanhos"> Seu tamanho é </p>
@@ -54,11 +54,10 @@
         <li>Após isso, a roupa será projetada em você, lhe mostrando o seu tamanho ideal.</li>
     </ol>
 
-    <img id="manequim" class="manequimF" src="femP.png" alt="" srcset="">
+    <img id="manequim" class="manequimM" src="femP.png" alt="" srcset="">
 
     </main>
     <footer></footer>
     
     <script src="experimenteF.js"></script>
 </body>
-</html>

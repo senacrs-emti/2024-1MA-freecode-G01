@@ -43,16 +43,16 @@ btCalculaMedida.addEventListener('click', () => {
 
     if (medida <= 48){
         tamanho = "PP"; 
-        manequim.setAttribute("src","femP.png")
+        manequim.setAttribute("src","mascP.png")
     } else if ( medida >= 49 && medida <= 51){
         tamanho = "P";
-        manequim.setAttribute("src","femP.png");
+        manequim.setAttribute("src","mascP.png");
     } else if (medida >=52 && medida <= 53){
         tamanho = "M";
-        manequim.setAttribute("src","femM.png");
+        manequim.setAttribute("src","mascM.png");
     } else if (medida>=54 && medida <= 56){
         tamanho = "G";
-        manequim.setAttribute("src","femG.png");
+        manequim.setAttribute("src","mascG.png");
     } else {
         tamanho = "GG";
     }
@@ -73,8 +73,8 @@ if (btn) { // Detect clicks on the button
     btn.classList.toggle("dipped");
   };
 }
-
-
+ 
+ 
 // Open file when the link in the preview is clicked
 let goto = (file, line) => {
   window.parent.postMessage(
