@@ -215,3 +215,10 @@
     margin-left: 0!important;
     margin-top: 0!important;
   }
+
+#manequim{
+  position: relative;
+    top: -1381px;
+    left: 1008px;
+    height: 508px;
+}

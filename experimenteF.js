@@ -34,6 +34,8 @@ const btCalculaMedida = document.getElementById('calcula');
 btCalculaMedida.addEventListener('click', () => {
     // captura a medida
     let medida = document.getElementById('medida').value;
+    let largura = 4;
+    let altura = 4;
     
     let conversao = ((pixelCM*medida)*100)*2;
     let roupa = document.getElementById("roupa");
@@ -41,22 +43,34 @@ btCalculaMedida.addEventListener('click', () => {
 
     let manequim = document.getElementById("manequim");
 
-    if (medida <= 48){
+    if (medida <= 65){
         tamanho = "PP"; 
-        manequim.setAttribute("src","mascP.png")
-    } else if ( medida >= 49 && medida <= 51){
+        largura = 3;
+        altura = 3;
+        manequim.setAttribute("src","femP.png")
+    } else if ( medida >= 66 && medida <= 75){
         tamanho = "P";
-        manequim.setAttribute("src","mascP.png");
-    } else if (medida >=52 && medida <= 53){
+        largura = 3.5;
+        altura = 3.5;
+        manequim.setAttribute("src","femP.png");
+    } else if (medida >=76 && medida <= 81){
         tamanho = "M";
-        manequim.setAttribute("src","mascM.png");
-    } else if (medida>=54 && medida <= 56){
+        largura = 3.9;
+        altura = 3.9;
+        manequim.setAttribute("src","femM.png");
+    } else if (medida>=82 && medida <= 89){
+        largura = 4.2;
+        altura = 4.2;
         tamanho = "G";
-        manequim.setAttribute("src","mascG.png");
+        manequim.setAttribute("src","femG.png");
     } else {
+        largura = 4.6;
+        altura = 4.6;
         tamanho = "GG";
+        manequim.setAttribute("src","femG.png")
     }
-    
+    document.getElementById("roupaSobre").setAttribute("width",largura);
+    document.getElementById("roupaSobre").setAttribute("height",altura);
     document.getElementById("tamanhos").innerHTML = "Seu tamanho é " + tamanho;
     
 });
@@ -100,16 +114,16 @@ switch (roupa) {
       img = "roupaf1.png";
     break;
     case '2':
-      img = "roupaf2.png";
+      img = "roupaFnova.png";
     break;
     case '3':
-      img = "roupaf3.png";
+      img = "roupaf3Nova.png";
     break;
     case '4':
-      img = "roupaf4.png";
+      img = "roupaf4Nova.png";
     break;
     case '5':
-      img = "roupaf5.png";
+      img = "roupaf5Nova.png";
     break;
     case '6':
       img = "roupaf6.png";
@@ -127,4 +141,5 @@ switch (roupa) {
       img = "roupaf10.png";
     break;
 }
+
 document.getElementById("foto").src = img;

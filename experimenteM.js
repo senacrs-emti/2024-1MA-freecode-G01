@@ -41,22 +41,34 @@ btCalculaMedida.addEventListener('click', () => {
 
     let manequim = document.getElementById("manequim");
 
-    if (medida <= 48){
+    if (medida <= 77){
         tamanho = "PP"; 
+        largura = 3.5;
+        altura = 4;
         manequim.setAttribute("src","mascP.png")
-    } else if ( medida >= 49 && medida <= 51){
+    } else if ( medida >= 78 && medida <= 82){
         tamanho = "P";
+        largura = 3.8;
+        altura = 3.8;
         manequim.setAttribute("src","mascP.png");
-    } else if (medida >=52 && medida <= 53){
+    } else if (medida >=83 && medida <= 88){
         tamanho = "M";
+        largura = 4.2;
+        altura = 4.2;
         manequim.setAttribute("src","mascM.png");
-    } else if (medida>=54 && medida <= 56){
+    } else if (medida>=89 && medida <= 94){
         tamanho = "G";
+        largura = 4.6;
+        altura = 4.6;
         manequim.setAttribute("src","mascG.png");
     } else {
         tamanho = "GG";
+        largura = 4.8;
+        altura = 4.8;
+        manequim.setAttribute("src","mascG.png")
     }
-    
+    document.getElementById("roupaSobre").setAttribute("width",largura);
+    document.getElementById("roupaSobre").setAttribute("height",altura);
     document.getElementById("tamanhos").innerHTML = "Seu tamanho é " + tamanho;
     
 });
@@ -103,7 +115,7 @@ switch (roupa) {
       img = "roupam2.png";
     break;
     case '3':
-      img = "roupam3.png";
+      img = "roupaMnova.png";
     break;
     case '4':
       img = "roupam4.png";
